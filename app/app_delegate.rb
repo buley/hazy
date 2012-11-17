@@ -4,7 +4,8 @@ class AppDelegate
     #navigationController = UINavigationController.alloc.initWithRootViewController(HomeController.new)
     #@window.rootViewController = navigationController
     tabController = UITabBarController.alloc.init
-    vc1 = GameController.alloc.initWithTabBar
+    vc1 = HomeController.alloc.initWithTabBar
+    vc2 = TableController.alloc.initWithTabBar 
     vc2 = SettingsController.alloc.initWithTabBar 
 
     # Adds controllers to tab bar

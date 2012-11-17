@@ -1,6 +1,9 @@
 $:.unshift("/Library/RubyMotion/lib")
 require 'motion/project'
 require 'motion-testflight'
+require 'bundler'
+
+bundler.require
 
 Motion::Project::App.setup do |app|
 	app.identifier = 'co.hazy'

@@ -12,8 +12,10 @@ extern "C" {
     void *rb_vm_top_self(void);
     void rb_rb2oc_exc_handler(void);
     void rb_exit(int);
-void MREP_1CB276A1EAE748BF8F760FC37F10927F(void *, void *);
-void MREP_51071AD9FBC84BA382D78B75FB98224A(void *, void *);
+void MREP_701EFD12DA7A45988994B9A33B585A8D(void *, void *);
+void MREP_53D99EF5A8124A93A54D58EA8744460E(void *, void *);
+void MREP_6DD0B2538B03445D82253F8BBC369320(void *, void *);
+void MREP_117414B0944A4F02951794B53F885892(void *, void *);
 }
 
 extern "C"
@@ -30,8 +32,10 @@ RubyMotionInit(int argc, char **argv)
 	}
 	try {
 	    void *self = rb_vm_top_self();
-MREP_1CB276A1EAE748BF8F760FC37F10927F(self, 0);
-MREP_51071AD9FBC84BA382D78B75FB98224A(self, 0);
+MREP_701EFD12DA7A45988994B9A33B585A8D(self, 0);
+MREP_53D99EF5A8124A93A54D58EA8744460E(self, 0);
+MREP_6DD0B2538B03445D82253F8BBC369320(self, 0);
+MREP_117414B0944A4F02951794B53F885892(self, 0);
 	}
 	catch (...) {
 	    rb_rb2oc_exc_handler();

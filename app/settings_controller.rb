@@ -2,7 +2,7 @@ class SettingsController < UIViewController
 
     def initWithTabBar
       me = init
-      anImage = UIImage.imageNamed("Tab_Bar/cloudy.png")
+      anImage = UIImage.imageNamed("Tab_Bar/settings.png")
       me.tabBarItem = UITabBarItem.alloc.initWithTitle("Settings", image: anImage, tag: 1)
       me
     end
