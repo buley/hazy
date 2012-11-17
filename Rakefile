@@ -3,7 +3,7 @@ require 'motion/project'
 require 'motion-testflight'
 require 'bundler'
 
-bundler.require
+Bundler.require
 
 Motion::Project::App.setup do |app|
 	app.identifier = 'co.hazy'
